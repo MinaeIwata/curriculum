@@ -7,27 +7,27 @@
 
 問２
 ▶︎ルートポート(RP)
-・Switch1 - Switch3間のSwitch1側のポート
+・Switch1 - Switch3間のSwitch1側のF0/2
 　Switch1 - Switch3が100
 　Switch1 - Switch2 - Switch4 _ Switch3が19+100+100=219
 　小さい方が100だから
-・Switch2 - Switch1のSwitch2側のポート
+・Switch2 - Switch1のSwitch2側のF0/1
 　Switch2 - Switch1 - Switch3が19+100=119
 　Switch2 - Switch4 - Switch3が100+100=200
 　小さい方が119だから
-・Switch4 - Switch3のSwitch4側のポート
+・Switch4 - Switch3のSwitch4側のE0/2
 　Switch4 - Switch2 - Switch1 - Switch3が100+19+100=219
 　Switch4 - Switch3が100
 　小さい方が100だから
 
 ▶︎指定ポート(DP)
-・Switch3の両端のポート
+・Switch3の両端のE0/1とE0/2
 　Switch3はルートブリッジだから両端のポートは指定ポートというルールだから
-・Switch1 - Switch2間のSwitch1側のポート
+・Switch1 - Switch2間のSwitch1側のF0/1
 　ルートポートの向かいのポートだから
-・Switch2 - Switch4間のSwitch4側のポート
+・Switch2 - Switch4間のSwitch4側のE0/1
 　両端が何も指定されていないポートで、スイッチブリッジIDが小さい方だから
 
 ▶︎ブロッキングポート(BP)
-・Switch2 - Switch4間のSwitch2側のポート
+・Switch2 - Switch4間のSwitch2側のF0/2
 　何の役割もないから
